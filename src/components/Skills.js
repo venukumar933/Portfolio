@@ -32,12 +32,13 @@ const Skills = () => {
       { threshold: 0.5 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    const currentRef = sectionRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (sectionRef.current) {
+      if (currentRef) {
         observer.unobserve(currentRef);
       }
     };
@@ -59,9 +60,7 @@ const Skills = () => {
               aria-valuenow={skill.level}
               aria-valuemin="0"
               aria-valuemax="100"
-            >
-              
-            </div>
+            ></div>
           </div>
         </div>
       </li>
