@@ -1,13 +1,12 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { CgProfile } from "react-icons/cg";
 import { SlSocialVkontakte } from "react-icons/sl";
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div className="container-fluid">
-        <a className="navbar-brand " href="#"><SlSocialVkontakte size={25}/> VENU KUMAR</a>
+        <a className="navbar-brand " href="Home"><SlSocialVkontakte size={25}/> VENU KUMAR</a>
         <button
           className="navbar-toggler"
           type="button"

@@ -38,7 +38,7 @@ const Skills = () => {
 
     return () => {
       if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+        observer.unobserve(currentRef);
       }
     };
   }, []);

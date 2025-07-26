@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import './Certifications.css';
 import { LiaExternalLinkSquareAltSolid } from "react-icons/lia";
 
