@@ -1,0 +1,66 @@
+#about a{
+ text-align: center;  
+ align-items: center;
+ justify-content: center;
+}
+#about h1 {
+  color: rgb(218, 202, 23);
+}
+
+#about h5 {
+  font-size: 1.2rem;
+  
+}
+
+
+#about p {
+  font-size: 1rem;
+  color: #444;
+}
+#about {
+  background-image: url('https://e0.pxfuel.com/wallpapers/846/344/desktop-wallpaper-portfolio.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  color: white;
+ 
+}
+.animated-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  line-height: 1.2;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.letter {
+  display: inline-block;
+  opacity: 0;
+  animation: floatIn 0.5s ease-out forwards;
+}
+
+/* Directional Transform Origins */
+.letter-up {
+  transform: translateY(-20px);
+}
+.letter-down {
+  transform: translateY(20px);
+}
+.letter-left {
+  transform: translateX(-20px);
+}
+.letter-right {
+  transform: translateX(20px);
+}
+
+/* Float In Animation */
+@keyframes floatIn {
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+

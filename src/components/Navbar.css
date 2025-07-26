@@ -1,0 +1,34 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #1e293b00;
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  
+}
+
+.logo-img {
+  height: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+.navbar-nav li:hover {
+  text-decoration: underline;
+  color: rgb(63, 63, 134);
+  text-underline-offset: 4px; /* Moves underline slightly below text */
+}

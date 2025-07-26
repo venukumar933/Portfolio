@@ -1,0 +1,17 @@
+#skills h4 {
+  font-weight: 600;
+}
+
+#skills .list-group-item {
+  font-size: 1rem;
+}
+.progress-container {
+  width: 100%; /* You can change this to 60% or 80% as desired */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.progress {
+  height: 5px;
+  border-radius: 10px;
+}
