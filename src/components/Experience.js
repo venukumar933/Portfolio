@@ -16,13 +16,14 @@ const Experience = () => {
       { threshold: 0.5 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    const currentRef = sectionRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
@@ -48,13 +49,13 @@ const Experience = () => {
                 <li className="mb-4">
                   <h5 className="fw-bold mb-1">Bachelor of Technology - CS</h5>
                   <p className="mb-1 text-muted">Sri Indu Institute of Engg & Tech. (2021 - 2025)</p>
-                  <p className='mb-1 fs-6 fw-light text-muted'>CGPA 7.4/10</p>
+                  <p className="mb-1 fs-6 fw-light text-muted">CGPA 7.4/10</p>
                   <p>Hyderabad, Telangana - 500070</p>
                 </li>
                 <li>
                   <h5 className="fw-bold mb-1">Intermediate (MPC)</h5>
                   <p className="mb-1 text-muted">Narayana Junior College (2019 - 2021)</p>
-                   <p className='mb-1 fs-6 fw-light text-muted'>Percentage 96%</p>
+                  <p className="mb-1 fs-6 fw-light text-muted">Percentage 96%</p>
                   <p>Hyderabad, Telangana - 500070</p>
                 </li>
               </ul>
@@ -72,15 +73,14 @@ const Experience = () => {
               </h4>
               <ul className="list-unstyled px-4">
                 <li className="mb-4">
-                   <h5 className="fw-bold mb-1">Web Development Intern (Remote)</h5>
-                  <p className="mb-1 text-muted"> Cognifyz (Jan 2025 - Apr 2025)</p>
-                  <p>Python Programming  Writing efficient and scalable code
- Web Development Building dynamic applications with Python frameworks
- Automation & Scripting Creating efficient workflow solutions
- Database Management  Handling and optimizing data storage</p>
-                </li>
-                <li>
-                 
+                  <h5 className="fw-bold mb-1">Web Development Intern (Remote)</h5>
+                  <p className="mb-1 text-muted">Cognifyz (Jan 2025 - Apr 2025)</p>
+                  <p>
+                    <strong>Python Programming:</strong> Writing efficient and scalable code<br />
+                    <strong>Web Development:</strong> Building dynamic applications with Python frameworks<br />
+                    <strong>Automation & Scripting:</strong> Creating efficient workflow solutions<br />
+                    <strong>Database Management:</strong> Handling and optimizing data storage
+                  </p>
                 </li>
               </ul>
             </div>

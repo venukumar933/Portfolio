@@ -47,7 +47,7 @@ const About = () => {
           {/* Buttons */}
           <div className="mt-4 d-flex gap-4 flex-wrap">
             <a
-              href="/Venu_Kumar_CV.pdf"
+              href="https://drive.google.com/file/d/1WfXZ0_OqK5opNvPd8Trgx4rbEv2y2eMs/view?usp=sharing"
               download
               className="btn btn-secondary border-1 rounded-4"
             >
