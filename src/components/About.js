@@ -56,7 +56,7 @@ const About = () => {
             </a>
 
             <a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://www.linkedin.com/in/venukumar-gundaboina-8509722a6/"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-outline-light border-1 rounded-4"
@@ -66,7 +66,7 @@ const About = () => {
             </a>
 
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/venukumar933"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-outline-light border-1 rounded-4"
