@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import './Certifications.css';
 import { LiaExternalLinkSquareAltSolid } from "react-icons/lia";
 
@@ -24,14 +24,11 @@ const certifications = [
     date: 'Jan 2025',
     link: 'https://www.hackerrank.com/certificates/901afc029022'
   },
-
 ];
 
 const Certifications = () => {
-  const [visibleCards, setVisibleCards] = useState([]);
   const cardRefs = useRef([]);
 
-  
   return (
     <section id="certifications" className="container py-5">
       <h1 className="text-center fw-bold mb-2">Certifications</h1>
@@ -39,7 +36,7 @@ const Certifications = () => {
       <div className="row">
         {certifications.map((cert, index) => (
           <div
-            className={`col-md-6 col-lg-4 mb-4 fade-in-up ${visibleCards.includes(index) ? 'visible' : ''}`}
+            className="col-md-6 col-lg-4 mb-4 fade-in-up"
             key={cert.id}
             ref={(el) => (cardRefs.current[index] = el)}
           >
@@ -54,7 +51,7 @@ const Certifications = () => {
                   rel="noopener noreferrer"
                   className="btn btn-outline-primary mt-4 px-0 border-1 rounded-3"
                 >
-                  View Certificate<LiaExternalLinkSquareAltSolid size={20} />
+                  View Certificate <LiaExternalLinkSquareAltSolid size={20} />
                 </a>
               </div>
             </div>
